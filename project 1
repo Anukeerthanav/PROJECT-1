@@ -1,0 +1,16 @@
+#randam pasword generater
+
+import random
+print("welcome to random pasword generater")
+
+randomechars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*(){}|?><,./;'[}"
+
+nofpasword = int(input(" Please enter the number of paswords to be generated: "))
+pwwordlenth = int(input(" Please enter the lenth of the pasword needed: "))
+
+print(" Here are your random paswords:")
+for x in range (nofpasword):
+    pwd = ""
+    for chars in range(pwwordlenth):
+        pwd = pwd + random.choice(randomechars)
+    print(pwd)
